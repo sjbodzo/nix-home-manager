@@ -40,6 +40,7 @@ in {
         entr
         magic-wormhole-rs
         yazi
+        awscli2
 
         nil
         nixfmt
