@@ -15,6 +15,7 @@ in {
     programs.go = { enable = true; };
     programs.direnv = {
       enable = true;
+      package = pkgs.unstable.direnv;
       enableZshIntegration = true;
       nix-direnv.enable = true;
     };
