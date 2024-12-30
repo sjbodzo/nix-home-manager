@@ -54,6 +54,7 @@ in {
         fnm
         python3
         rustup
+        zig
 
         tree
         ripgrep
@@ -69,9 +70,9 @@ in {
     home.file.".config/wezterm/wezterm.lua".source = dotfiles + "/.config/wezterm/wezterm.lua";
 
     # zsh
-    home.file.".zshrc".source = dotfiles + "/.zshrc";
-    home.file.".zshenv".source = dotfiles + "/.zshenv";
-    home.file.".zprofile".source = dotfiles + "/.zprofile";
+    home.file.".zshrc".source = dotfiles + ".config/zsh/.zshrc";
+    home.file.".zshenv".source = dotfiles + ".config/zsh/.zshenv";
+    home.file.".zprofile".source = dotfiles + ".config/zsh/.zprofile";
     home.file.".zplugin" = {
         recursive = true;
         source = dotfiles + "/.config/zsh/.zplugin";
