@@ -9,6 +9,7 @@
     ./tmux.nix
   ];
 
+  programs.zsh.enable = true;
   programs.t-shell-tooling.enable = true;
   programs.t-doomemacs.enable = true;
   programs.neovim.enable = true;
