@@ -69,6 +69,9 @@ in {
     home.file.".config/starship.toml".source = dotfiles + "/.config/starship.toml";
     home.file.".config/wezterm/wezterm.lua".source = dotfiles + "/.config/wezterm/wezterm.lua";
 
+    # ghostty
+    home.file.".config/ghostty/config".source = dotfiles + "/.config/ghostty/config";
+
     # zsh
     home.file.".zshrc".source = dotfiles + ".config/zsh/.zshrc";
     home.file.".zshenv".source = dotfiles + ".config/zsh/.zshenv";
