@@ -6,6 +6,7 @@ in {
     programs.neovim = {
       defaultEditor= true;
       vimAlias = true;
+      package = pkgs.unstable.neovim;
     };
 
     xdg.configFile.nvim = {
