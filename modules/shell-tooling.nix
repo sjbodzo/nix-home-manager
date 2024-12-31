@@ -73,9 +73,9 @@ in {
     home.file.".config/ghostty/config".source = dotfiles + "/.config/ghostty/config";
 
     # zsh
-    home.file.".zshrc".source = dotfiles + ".config/zsh/.zshrc";
-    home.file.".zshenv".source = dotfiles + ".config/zsh/.zshenv";
-    home.file.".zprofile".source = dotfiles + ".config/zsh/.zprofile";
+    home.file.".zshrc".source = dotfiles + "/.config/zsh/.zshrc";
+    home.file.".zshenv".source = dotfiles + "/.config/zsh/.zshenv";
+    home.file.".zprofile".source = dotfiles + "/.config/zsh/.zprofile";
     home.file.".zplugin" = {
         recursive = true;
         source = dotfiles + "/.config/zsh/.zplugin";
