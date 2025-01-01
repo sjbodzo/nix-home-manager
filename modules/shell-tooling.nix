@@ -28,6 +28,7 @@ in {
         (ripgrep.override { withPCRE2 = true; })
 	    starship
         eza
+        zellij
         fd
 
         bat
@@ -72,6 +73,13 @@ in {
     # ghostty
     home.file.".config/ghostty/config".source = dotfiles + "/.config/ghostty/config";
 
+    # zellij
+    home.file.".config/zellij" = {
+        recursive = true;
+        source = dotfiles + "/.config/zellij";
+        target = ".config/zellij";
+    };
+
     # zsh
     home.file.".zshrc".source = dotfiles + "/.config/zsh/.zshrc";
     home.file.".zshenv".source = dotfiles + "/.config/zsh/.zshenv";
@@ -79,12 +87,12 @@ in {
     home.file.".zplugin" = {
         recursive = true;
         source = dotfiles + "/.config/zsh/.zplugin";
-        target = "/.config/zsh/.zplugin";
+        target = ".config/zsh/.zplugin";
     };
     home.file.".zfunc" = {
         recursive = true;
         source = dotfiles + "/.config/zsh/.zfunc";
-        target = "/.config/zsh/.zfunc";
+        target = ".config/zsh/.zfunc";
     };
   };
 }
