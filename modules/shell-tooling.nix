@@ -60,6 +60,7 @@ in {
         tree
         ripgrep
 
+        skopeo
         kubectl
         kubie
         krew
