@@ -41,6 +41,7 @@ in {
         git
         entr
         magic-wormhole-rs
+        deno
         yazi
         awscli2
 
