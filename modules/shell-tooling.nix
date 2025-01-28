@@ -58,6 +58,9 @@ in {
         rustup
         zig
 
+        cmake
+        libiconv
+
         tree
         ripgrep
 
