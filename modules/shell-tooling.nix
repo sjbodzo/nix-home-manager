@@ -50,7 +50,7 @@ in {
 
         curl
         jq
-        yq
+        yq-go
         just
 
         fnm
