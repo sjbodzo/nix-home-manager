@@ -54,6 +54,7 @@ in {
         just
 
         fnm
+        mise
         python3
         rustup
         zig
