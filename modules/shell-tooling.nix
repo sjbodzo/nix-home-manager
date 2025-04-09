@@ -36,7 +36,7 @@ in {
         htop
         btop
         watch
-        _1password
+        _1password-cli
         _1password-gui
         git
         entr
