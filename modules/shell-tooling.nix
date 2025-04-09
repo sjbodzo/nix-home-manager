@@ -67,7 +67,6 @@ in {
 
         skopeo
         kubectl
-        kubie
         krew
       ];
 
