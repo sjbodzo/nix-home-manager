@@ -36,8 +36,8 @@ in {
         htop
         btop
         watch
-        _1password-cli
-        _1password-gui
+        pkgs.unstable._1password-cli
+        pkgs.unstable._1password-gui
         git
         entr
         magic-wormhole-rs
