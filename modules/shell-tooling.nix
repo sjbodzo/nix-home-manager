@@ -45,7 +45,7 @@ in {
         awscli2
 
         nil
-        nixfmt
+        nixfmt-rfc-style
 
         curl
         jq
@@ -57,6 +57,7 @@ in {
         python3
         rustup
         zig
+        gopls
 
         cmake
         libiconv
