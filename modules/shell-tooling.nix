@@ -49,9 +49,7 @@ in {
         yazi
 
         awscli2
-        google-cloud-sdk.withExtraComponents [
-            google-cloud-sdk.components.gke-gcloud-auth-plugin
-        ]
+        gdk
 
         nil
         nixfmt-rfc-style
