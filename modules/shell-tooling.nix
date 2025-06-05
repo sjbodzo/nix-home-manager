@@ -1,6 +1,11 @@
 { dotfiles, config, lib, pkgs, ... }:
 
-let cfg = config.programs.t-shell-tooling;
+let
+    cfg = config.programs.t-shell-tooling;
+    gdk = pkgs.google-cloud-sdk.withExtraComponents( with pkgs.google-cloud-sdk.components; [
+      gke-gcloud-auth-plugin
+      cloud-build-local
+    ]);
 in {
 
   options.programs.t-shell-tooling.enable =
@@ -36,7 +41,7 @@ in {
         htop
         btop
         watch
-        pkgs.unstable._1password-cli
+        gdk
         git
         entr
         magic-wormhole-rs
@@ -46,7 +51,6 @@ in {
         awscli2
         google-cloud-sdk.withExtraComponents [
             google-cloud-sdk.components.gke-gcloud-auth-plugin
-            google-cloud-sdk.components.cloud-build-local
         ]
 
         nil
