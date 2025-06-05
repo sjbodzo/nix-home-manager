@@ -42,10 +42,16 @@ in {
         magic-wormhole-rs
         deno
         yazi
+
         awscli2
+        google-cloud-sdk.withExtraComponents [
+            google-cloud-sdk.components.gke-gcloud-auth-plugin
+            google-cloud-sdk.components.cloud-build-local
+        ]
 
         nil
         nixfmt-rfc-style
+        nh
 
         curl
         jq
