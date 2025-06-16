@@ -106,5 +106,8 @@ in {
         source = dotfiles + "/.config/zsh/.zfunc";
         target = ".config/zsh/.zfunc";
     };
+
+    # jj
+    home.file.".jjconfig.toml".source = dotfiles + "/.config/.jjconfig.toml";
   };
 }
