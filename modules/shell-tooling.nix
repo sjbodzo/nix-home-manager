@@ -28,8 +28,8 @@ in {
 
     home.packages = with pkgs;
       [
-        (nerdfonts.override { fonts = [ "Iosevka" "IosevkaTerm" ]; })
         (ripgrep.override { withPCRE2 = true; })
+        nerdfonts
 	    starship
         eza
         zellij
@@ -50,9 +50,9 @@ in {
         awscli2
         gdk
 
+        pkgs.unstable.nh
         nil
         nixfmt-rfc-style
-        nh
 
         curl
         jq
