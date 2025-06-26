@@ -25,12 +25,15 @@ in {
     };
 
     fonts.fontconfig.enable = true;
-    fonts.packages = [ ... ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts)
 
     home.packages = with pkgs;
       [
         (ripgrep.override { withPCRE2 = true; })
-        nerdfonts
+        nerd-fonts.jetbrains-mono
+        nerd-fonts.zed-mono
+        nerd-fonts.mononoki
+        nerd-fonts.iosevka-term
+        nerd-fonts.iosevka
 
 	    starship
         eza
