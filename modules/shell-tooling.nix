@@ -63,6 +63,7 @@ in {
         jq
         yq-go
         just
+        yaml-language-server
 
         fnm
         mise
