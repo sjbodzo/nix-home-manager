@@ -58,6 +58,9 @@ in {
         pkgs.unstable.nh
         nil
         nixfmt-rfc-style
+        shellcheck
+        shfmt
+        bash-language-server
 
         curl
         jq
