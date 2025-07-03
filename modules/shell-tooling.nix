@@ -68,7 +68,7 @@ in {
         just
         yaml-language-server
 
-        claude-code
+        pkgs.master.claude-code
 
         fnm
         mise
