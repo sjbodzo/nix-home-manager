@@ -68,6 +68,8 @@ in {
         just
         yaml-language-server
 
+        claude-code
+
         fnm
         mise
         python3
