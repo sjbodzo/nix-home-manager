@@ -70,6 +70,8 @@ in {
 
         pkgs.master.claude-code
 
+        pkgs.master._1password-cli
+
         fnm
         mise
         python3
