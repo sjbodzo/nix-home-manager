@@ -40,6 +40,8 @@ in {
         zellij
         fd
 
+        asciinema_3
+
         bat
         gawk
         htop
