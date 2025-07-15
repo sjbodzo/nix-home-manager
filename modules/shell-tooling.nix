@@ -42,6 +42,9 @@ in {
 
         asciinema_3
 
+        packer
+        ansible
+
         bat
         gawk
         htop
