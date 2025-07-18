@@ -72,6 +72,7 @@ in {
         yq-go
         just
         yaml-language-server
+        helm-ls
 
         pkgs.master.claude-code
 
