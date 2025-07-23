@@ -44,6 +44,7 @@ in {
 
         packer
         ansible
+        terraform
 
         bat
         gawk
